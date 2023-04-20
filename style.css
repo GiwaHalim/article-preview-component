@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+}
+main{
+    display: flex;
+    max-width: 650px;
+    border-radius: 15px;
+    margin-bottom: 20px ;
+    
+}
+.texts{
+    padding: 1em 1.5em;
+    background: white;
+}
+.top{
+    font-size: 1.2em;
+    font-family: 700;
+    margin-bottom: 10px;
+    color: hsl(217, 19%, 35%);
+}
+.lower{
+    font-size: 11px;
+    margin-bottom: 20px;
+    color: hsl(214, 17%, 51%);
+}
+.drawer{
+    width: 45%;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1em 1.5em;
+}
+.avatar{
+    width: 40px;
+    border-radius: 50%;
+}
+.user{ 
+    display: flex;
+    gap: 10px;
+}
+.names{
+    font-size: 14px;
+}
+.date{
+    font-size: 11px;
+    color: hsl(214, 17%, 51%);
+}
+.share{
+    position: relative;
+    background: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: 6.5px 10.5px;
+}
+.end2{
+    display: none;
+}
+
+.mobile-share{
+    border-radius: 50%;
+    background: hsl(212, 23%, 69%);
+    padding: 6.5px 10.5px;
+}
+.mobile-image{
+    width: 15px;
+}
+.dis{
+    visibility: hidden;
+}
+.dist{
+    visibility: visible;
+}
+.tooltip{
+  min-width: 150px;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(214, 17%, 51%);
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 40px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: -100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.share-paragraph{
+    font-size: 11px;
+    letter-spacing: 10px;
+}
+
+.tooltip-img{
+    width: 15px;
+}
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+
+.image{
+    width: 15px;
+}
+footer{
+    font-size: 11px;
+
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+@media( max-width: 720px){
+    main{
+        max-width: 300px;
+        flex-direction: column;
+    }
+    .drawer{
+        width: 100%;
+    }
+    .end{
+        display: none;
+    }
+    .end2{
+        display: flex;
+        background: white;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 1.5em;
+
+    }
+    .user-mobile{
+        display: flex;
+        gap: 10px;
+    }
+
+    .share-mobile{
+        position: relative;
+    background: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: 6.5px 10.5px;
+    }
+    .sharer{
+        display: none;
+        justify-content: space-evenly;
+        height: 10;
+        color: hsl(214, 17%, 51%);
+        gap: 15px;
+        
+    }
+    
+}
